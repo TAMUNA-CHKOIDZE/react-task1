@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# react-task1
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 🧩 About
+
+This is a responsive form built with **React**, demonstrating how to manage complex form data using `useState`.  
+It includes input fields like text, number, checkbox, radio buttons, select dropdown, and textarea.  
+The form validates required fields on submission, and displays the submitted data as formatted JSON.  
+The app also includes a reset functionality and responsive layout using custom CSS.
+
+🔗 **Live Demo**: [https://tamuna-chkoidze.github.io/react-task1](https://tamuna-chkoidze.github.io/react-task1)
+
+---
+
+## 📸 Features
+
+- Controlled form inputs (text, number, checkbox, radio, select, textarea)
+- Form validation before submission
+- Displays submitted data as JSON
+- Reset button to clear form and result
+- Responsive layout and custom styling with CSS
+- Accessibility features (labels associated with inputs)
+
+---
+
+## 📦 Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in the development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app and deploys it to GitHub Pages.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To deploy this project to **GitHub Pages**, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Install `gh-pages` as a dev dependency:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install gh-pages --save-dev
 
-## Learn More
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Add the following lines to your package.json:
+   "homepage": "https://tamuna-chkoidze.github.io/react-task1",
+   "scripts": {
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+   }
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Deploy your app by running:
 
-### Code Splitting
+   ```bash
+   npm run deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Once deployed, your app will be available at:
+   👉 https://tamuna-chkoidze.github.io/react-task1
+   ```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🛠 Technologies Used:
+React (with Hooks)
+JavaScript (ES6+)
+CSS (custom and responsive)
+Git & GitHub Pages
